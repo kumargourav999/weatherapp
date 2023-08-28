@@ -1,0 +1,13 @@
+.body{
+text-align: center;
+margin: auto;
+width: 50%;
+justify-content: center;
+height: 50%;
+
+border: 2px solid black;
+border-radius: 20px;
+ 
+}
+
+

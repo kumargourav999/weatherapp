@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .rain {
+    position: relative;
+    width: 2px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: rainAnimation 0.5s linear infinite;
+  }
+
+  @keyframes rainAnimation {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+</style>
+<title>Realistic Rain Animation</title>
+</head>
+<body>
+  <div class="rain"></div>
+</body>
+</html>
